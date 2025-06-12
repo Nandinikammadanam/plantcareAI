@@ -1,114 +1,92 @@
 export const schema = {
-  "tables": {
-    "plants": {
-      "type": "collection",
-      "fields": {
-        "name": {
-          "type": "string",
-          "indexed": true
+  project_id: "40b28d84-64a0-48b0-8994-c4d108399cf1",
+  version: 0,
+  tables: {
+    plants: {
+      type: 'collection',
+      fields: {
+        name: {
+          type: 'string',
         },
-        "species": {
-          "type": "string",
-          "indexed": true
+        species: {
+          type: 'string',
         },
-        "image": {
-          "type": "string",
-          "indexed": true
+        image: {
+          type: 'string',
         },
-        "wateringFrequency": {
-          "type": "number",
-          "indexed": true
+        wateringFrequency: {
+          type: 'number',
         },
-        "lastWatered": {
-          "type": "string",
-          "indexed": true
+        lastWatered: {
+          type: 'string',
         },
-        "notes": {
-          "type": "string",
-          "indexed": true
+        notes: {
+          type: 'string',
         },
-        "isPremium": {
-          "type": "boolean",
-          "indexed": true
-        }
-      }
+        isPremium: {
+          type: 'boolean',
+        },
+      },
     },
-    "reminders": {
-      "type": "collection",
-      "fields": {
-        "plantId": {
-          "type": "string",
-          "indexed": true
+    reminders: {
+      type: 'collection',
+      fields: {
+        plantId: {
+          type: 'string',
         },
-        "type": {
-          "type": "string",
-          "indexed": true
+        type: {
+          type: 'string',
         },
-        "date": {
-          "type": "string",
-          "indexed": true
+        date: {
+          type: 'string',
         },
-        "isCompleted": {
-          "type": "boolean",
-          "indexed": true
+        isCompleted: {
+          type: 'boolean',
         },
-        "notes": {
-          "type": "string",
-          "indexed": true
-        }
-      }
+        notes: {
+          type: 'string',
+        },
+      },
     },
-    "identifications": {
-      "type": "collection",
-      "fields": {
-        "imageUrl": {
-          "type": "string",
-          "indexed": true
+    identifications: {
+      type: 'collection',
+      fields: {
+        imageUrl: {
+          type: 'string',
         },
-        "result": {
-          "type": "string",
-          "indexed": true
+        result: {
+          type: 'string',
         },
-        "confidence": {
-          "type": "number",
-          "indexed": true
+        confidence: {
+          type: 'number',
         },
-        "date": {
-          "type": "string",
-          "indexed": true
+        date: {
+          type: 'string',
         },
-        "notes": {
-          "type": "string",
-          "indexed": true
-        }
-      }
+        notes: {
+          type: 'string',
+        },
+      },
     },
-    "settings": {
-      "type": "collection",
-      "fields": {
-        "userId": {
-          "type": "string",
-          "indexed": true
+    settings: {
+      type: 'collection',
+      fields: {
+        userId: {
+          type: 'string',
         },
-        "isPremium": {
-          "type": "boolean",
-          "indexed": true
+        isPremium: {
+          type: 'boolean',
         },
-        "notificationsEnabled": {
-          "type": "boolean",
-          "indexed": true
+        notificationsEnabled: {
+          type: 'boolean',
         },
-        "darkMode": {
-          "type": "boolean",
-          "indexed": true
+        darkMode: {
+          type: 'boolean',
         },
-        "language": {
-          "type": "string",
-          "indexed": true
-        }
-      }
-    }
+        language: {
+          type: 'string',
+        },
+      },
+    },
   },
-  "version": 1,
-  "project_id": "40b28d84-64a0-48b0-8994-c4d108399cf1"
 };
